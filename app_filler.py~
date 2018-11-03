@@ -9,7 +9,6 @@ url = input("Enter URL: ")
 #give the url
 page_url = url
 
-#requets page through User Agent Mozilla
 req = Request( url , headers={'User-Agent': 'Mozilla/5.0'})
 webpage = urlopen(req).read()
 
