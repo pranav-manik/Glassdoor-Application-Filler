@@ -29,7 +29,7 @@ for job in soup.find_all("li", attrs={"data-is-easy-apply":"true"}):
 	easyApply_response = sess.get(easyApply_url, headers={'User-Agent': 'Mozilla/5.0'})
 	curPage = BeautifulSoup(easyApply_response.content, "html.parser")
 	# sess.get()
-
+	print(easyApply_url)
 	if once == True:
 		# print(easyApply_response)
 		# print(curPage.prettify())

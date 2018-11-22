@@ -37,7 +37,7 @@ UserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/5
 opts = Options()
 opts.add_argument("user-agent="+UserAgent)
 driver = webdriver.Chrome("/usr/local/bin/chromedriver", chrome_options=opts)
-driver.get("https://www.glassdoor.com/job-listing/junior-software-engineer-ts-sci-required-synergist-computing-JV_IC1153524_KO0,40_KE41,60.htm?jl=2776508780&ctt=1542859704860")
+driver.get("https://www.glassdoor.com/job-listing/senior-software-engineer-ts-sci-required-synergist-computing-JV_IC1153524_KO0,40_KE41,60.htm?jl=2776620374&ctt=1542860174194")
 assert "Glassdoor" in driver.title
 # ad = driver.find_element_by_xpath('//*[@id="SmartBanner"]/a[1]/span/svg')
 ad = driver.find_element_by_class_name('SVGInline-svg')
