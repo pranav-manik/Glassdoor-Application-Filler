@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+import keyboard
 
 class page_has_form(object):
 	def __init__(self, css_class):
@@ -36,7 +37,7 @@ UserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/5
 opts = Options()
 opts.add_argument("user-agent="+UserAgent)
 driver = webdriver.Chrome("/usr/local/bin/chromedriver", chrome_options=opts)
-driver.get("https://www.glassdoor.com/job-listing/software-engineer-dragos-JV_IC1153584_KO0,17_KE18,24.htm?jl=2732222047&ctt=1542385133501")
+driver.get("https://www.glassdoor.com/job-listing/junior-software-engineer-ts-sci-required-synergist-computing-JV_IC1153524_KO0,40_KE41,60.htm?jl=2776508780&ctt=1542859704860")
 assert "Glassdoor" in driver.title
 # ad = driver.find_element_by_xpath('//*[@id="SmartBanner"]/a[1]/span/svg')
 ad = driver.find_element_by_class_name('SVGInline-svg')
@@ -53,9 +54,15 @@ email.clear()
 email.send_keys("pranav.manik@gmail.com")
 # //*[@id="ApplyQuestions"]/div[5]/div/button
 resume = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[5]/div/button')
-resume.send_keys("/Users/PranavNew/Desktop/Resume/PranavManikcollegeResumeLatest.docx")
-resume.send_keys('Keys.RETURN')
-# resume.click()
+# resume.send_keys("/Users/PranavNew/Desktop/Resume/PranavManikcollegeResumeLatest.docx")
+resume.click()
+keyboard.write('Desktop')
+keyboard.press_and_release('enter')
+keyboard.write('Resume')
+keyboard.press_and_release('enter')
+keyboard.write('PranavManikcollegeResumeLatest')
+keyboard.press_and_release('enter')
+
 checkbox = driver.find_element_by_class_name('theme__check___2nJhq')
 checkbox.click()
 submit = driver.find_element_by_xpath('//*[@id="ApplyContainer"]/div/div[2]/div[2]/div[2]/form/div[2]/div/div[2]/button')
