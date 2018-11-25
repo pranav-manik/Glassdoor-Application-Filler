@@ -106,7 +106,8 @@ driver = webdriver.Chrome("/usr/local/bin/chromedriver", chrome_options=opts)
 # https://www.glassdoor.com/job-listing/software-developer-cloud-moser-consulting-JV_IC1153527_KO0,24_KE25,41.htm?jl=3007978726&ctt=1543104906959
 # https://www.glassdoor.com/job-listing/software-engineer-dragos-JV_IC1153584_KO0,17_KE18,24.htm?jl=2732222047&ctt=1543105496898
 # https://www.glassdoor.com/job-listing/software-developer-callrevu-JV_IC1153589_KO0,18_KE19,27.htm?jl=2907297699&ctt=1543129776165
-driver.get("https://www.glassdoor.com/job-listing/software-developer-callrevu-JV_IC1153589_KO0,18_KE19,27.htm?jl=2907297699&ctt=1543129776165")
+page_url = input("Enter URL: ")
+driver.get(page_url)
 assert "Glassdoor" in driver.title
 # ad = driver.find_element_by_xpath('//*[@id="SmartBanner"]/a[1]/span/svg')
 ad = driver.find_element_by_class_name('SVGInline-svg')

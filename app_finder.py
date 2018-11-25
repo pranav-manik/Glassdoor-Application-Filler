@@ -5,8 +5,7 @@ import requests
 
 
 #retreive url to search
-# page_url = input("Enter URL: ")
-page_url = "https://www.glassdoor.com/Job/columbia-software-engineer-intern-jobs-SRCH_IL.0,8_IC1153546_KO9,33.htm?jl=3000713306&jaguid=&src=GD_JOB_AD&srs=MY_JOBS&ao=376840"
+page_url = input("Enter URL: ")
 mainSite = "https://www.glassdoor.com"
 
 #requests page through User Agent Mozilla

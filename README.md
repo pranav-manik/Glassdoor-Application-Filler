@@ -7,7 +7,7 @@ hand the app_finder.py the search you would like it to scrape the inks will be d
 run application.py with the links form webpage.txt
 
 Dependencies
--PythonRequests\n
--BeautifulSoup4\n
--Selenium\n
--PyPi (keyboard)\n
+-PythonRequests\
+-BeautifulSoup4\
+-Selenium\
+-PyPi (keyboard)\
