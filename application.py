@@ -168,7 +168,7 @@ if form_type == 1:
 	keyboard.press_and_release('enter')
 	keyboard.write('Resume')
 	keyboard.press_and_release('enter')
-	keyboard.write('PranavManikcollegeResumeLatest')
+	keyboard.write('resume.docx')
 	keyboard.press_and_release('enter')
 	phone_number_field.clear()
 	phone_number_field.send_keys(phone_number)
@@ -312,7 +312,7 @@ if (form_type == 2):
 	keyboard.press_and_release('enter')
 	keyboard.write('Resume')
 	keyboard.press_and_release('enter')
-	keyboard.write('PranavManikcollegeResumeLatest')
+	keyboard.write('resume.docx')
 	keyboard.press_and_release('enter')
 
 	checkbox = driver.find_element_by_class_name('theme__check___2nJhq')
