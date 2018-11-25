@@ -6,8 +6,8 @@ This is a script to fill out job applications by themselves with your informatio
 hand the app_finder.py the search you would like it to scrape the inks will be distributed to the file webpage.txt
 run application.py with the links form webpage.txt
 
-Dependencies
+Dependencies\
 -PythonRequests\
 -BeautifulSoup4\
 -Selenium\
--PyPi (keyboard)\
+-PyPi (keyboard)
