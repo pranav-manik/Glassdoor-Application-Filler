@@ -57,6 +57,8 @@ class job(object):
 		self.end_day = end_day
 		self.end_year = end_year
 job1 = job("Title", "Glassdoor", "Cybersecurity", "blah blah blah blah", True, "June", "1", "1998", "N/A", "N/A", "N/A")
+job2 = job("Title", "Glassdoor", "Cybersecurity", "blah blah blah blah", True, "June", "1", "1998", "N/A", "N/A", "N/A")
+job3 = job("Title", "Glassdoor", "Cybersecurity", "blah blah blah blah", True, "June", "1", "1998", "N/A", "N/A", "N/A")
 
 
 
@@ -188,7 +190,7 @@ if form_type == 1:
 	end_day_field.send_keys(my_school.end_day)
 	end_year_field.send_keys(my_school.end_year)
 
-	#Experience
+	#Experience, job1
 	title_field.clear()
 	title_field.send_keys(job1.title)
 	company_field.clear()
@@ -204,14 +206,14 @@ if form_type == 1:
 		job_end_month_field.send_keys(job1.end_month)
 		job_end_day_field.send_keys(job1.end_day)
 		job_end_year_field.send_keys(job1.end_year)
-
 	job_start_month_field.send_keys(job1.start_month)
 	job_start_day_field.send_keys(job1.start_day)
 	job_start_year_field.send_keys(job1.start_year)
+	
+	
+	#job2, comment out if not used
 	add = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[2]')
 	add.click()
-	
-	#job2
 	title_field = driver.find_element_by_xpath('(//*[@id="experience_._title"])[2]')
 	company_field = driver.find_element_by_xpath('(//*[@id="experience_._company"])[2]')
 	industry_field = driver.find_element_by_xpath('(//*[@id="experience_._industry"])[2]')
@@ -224,7 +226,6 @@ if form_type == 1:
 	job_end_month_field = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[2]/div[8]/div/select[1]')
 	job_end_day_field = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[2]/div[8]/div/select[2]')
 	job_end_year_field = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[2]/div[8]/div/select[3]')
-
 	title_field.clear()
 	title_field.send_keys(job2.title)
 	company_field.clear()
@@ -240,20 +241,19 @@ if form_type == 1:
 		job_end_month_field.send_keys(job2.end_month)
 		job_end_day_field.send_keys(job2.end_day)
 		job_end_year_field.send_keys(job2.end_year)
-
 	job_start_month_field.send_keys(job2.start_month)
 	job_start_day_field.send_keys(job2.start_day)
 	job_start_year_field.send_keys(job2.start_year)
 	add = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[3]')
 	add.click()
 
-	#job3
+
+	#job3, comment out if not used
 	wait = WebDriverWait(driver, 10)
 	title_field = driver.find_element_by_xpath('(//*[@id="experience_._title"])[3]')
 	company_field = driver.find_element_by_xpath('(//*[@id="experience_._company"])[3]')
 	industry_field = driver.find_element_by_xpath('(//*[@id="experience_._industry"])[3]')
 	summary_field = driver.find_element_by_xpath('(//*[@id="experience_._summary"])[3]')
-
 	title_field.clear()
 	title_field.send_keys(job3.title)
 	company_field.clear()
@@ -277,11 +277,11 @@ if form_type == 1:
 		job_end_month_field.send_keys(job3.end_month)
 		job_end_day_field.send_keys(job3.end_day)
 		job_end_year_field.send_keys(job3.end_year)
-
 	job_start_month_field.send_keys(job3.start_month)
 	job_start_day_field.send_keys(job3.start_day)
 	job_start_year_field.send_keys(job3.start_year)
-	# //*[@id="ApplySection"]/div[2]/label/div
+
+
 	checkbox = driver.find_element_by_class_name('theme__check___2nJhq')
 	checkbox.click()
 	submit = driver.find_element_by_xpath('//*[@id="ApplyContainer"]/div/div[2]/div[2]/div[2]/form/div[2]/div/div[2]/button')
