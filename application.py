@@ -244,11 +244,11 @@ if form_type == 1:
 	job_start_month_field.send_keys(job2.start_month)
 	job_start_day_field.send_keys(job2.start_day)
 	job_start_year_field.send_keys(job2.start_year)
-	add = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[3]')
-	add.click()
 
 
 	#job3, comment out if not used
+	add = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[3]')
+	add.click()
 	wait = WebDriverWait(driver, 10)
 	title_field = driver.find_element_by_xpath('(//*[@id="experience_._title"])[3]')
 	company_field = driver.find_element_by_xpath('(//*[@id="experience_._company"])[3]')
