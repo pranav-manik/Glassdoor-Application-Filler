@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 import keyboard
 
-
+#personal info
 first_name = "firstName"
 last_name = "lastName"
 email = ""
@@ -35,34 +35,35 @@ class job(object):
 	company = ""
 	industry = ""
 	summary = ""
-	work_here = False
+	currently_work_here = False
 	start_month = ""
 	start_day = ""
 	start_year = ""
 	end_month = ""
 	end_day = ""
 	end_year = ""
-	def __init__(self, title, company, industry, summary, work_here,
+	def __init__(self, title, company, industry, summary, currently_work_here,
 				start_month, start_day, start_year,
 				end_month, end_day, end_year):
 		self.title = title
 		self.company = company
 		self.industry = industry
 		self.summary = summary
-		self.work_here = work_here
+		self.currently_work_here = currently_work_here
 		self.start_month = start_month
 		self.start_day = start_day
 		self.start_year = start_year
 		self.end_month = end_month
 		self.end_day = end_day
 		self.end_year = end_year
+
 job1 = job("Title", "Glassdoor", "Cybersecurity", "blah blah blah blah", True, "June", "1", "1998", "N/A", "N/A", "N/A")
 job2 = job("Title", "Glassdoor", "Cybersecurity", "blah blah blah blah", True, "June", "1", "1998", "N/A", "N/A", "N/A")
 job3 = job("Title", "Glassdoor", "Cybersecurity", "blah blah blah blah", True, "June", "1", "1998", "N/A", "N/A", "N/A")
 
 
 
-
+#########################################################################################################################
 
 
 class page_has_form(object):
@@ -199,7 +200,7 @@ if form_type == 1:
 	industry_field.send_keys(job1.industry)
 	summary_field.clear()
 	summary_field.send_keys(job1.summary)
-	if (job1.work_here == True):
+	if (job1.currently_work_here == True):
 		check_field.click()
 	else:
 		x_field.click()
@@ -234,7 +235,7 @@ if form_type == 1:
 	industry_field.send_keys(job2.industry)
 	summary_field.clear()
 	summary_field.send_keys(job2.summary)
-	if (job2.work_here == True):
+	if (job2.currently_work_here == True):
 		check_field.click()
 	else:
 		x_field.click()
@@ -270,7 +271,7 @@ if form_type == 1:
 	job_end_month_field = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[3]/div[8]/div/select[1]')
 	job_end_day_field = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[3]/div[8]/div/select[2]')
 	job_end_year_field = driver.find_element_by_xpath('//*[@id="ApplyQuestions"]/div[10]/div[3]/div[8]/div/select[3]')
-	if (job3.work_here == True):
+	if (job3.currently_work_here == True):
 		check_field.click()
 	else:
 		x_field.click()
