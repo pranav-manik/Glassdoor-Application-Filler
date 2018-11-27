@@ -1,4 +1,4 @@
-# Application-Filler
+# Glassdoor-Application-Filler
 This is a script to fill out job applications by themselves with your information
 (Version 1.0.0)
 
