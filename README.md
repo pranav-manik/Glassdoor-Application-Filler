@@ -36,7 +36,7 @@ Dependencies\
 -PythonRequests\
 -BeautifulSoup4\
 -Selenium\
--PyPi (keyboard)
+-keyboard
 
 
 [Demo](https://www.youtube.com/watch?v=gEMRnrLJLWI)
