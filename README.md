@@ -32,7 +32,7 @@ python3 application.py
 hand it the URL's form webpage.txt individually if the job description interests you to apply to the job
 
 
-Dependencies\
+##Dependencies\
 -PythonRequests\
 -BeautifulSoup4\
 -Selenium\
