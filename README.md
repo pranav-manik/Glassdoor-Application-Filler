@@ -8,16 +8,19 @@ run application.py with the links form webpage.txt
 
 make sure you fill out the application.py with your information before continuing
 
+
+## Installation Process:
 (make sure you are using pip3)
-Installation Process:
 ```
 pip install beautifulsoup4
 pip install requests
 pip install selenium
 pip install keyboard
 ```
+
+## Usage
 (make sure you are using python 3)
-Then run app_finder.py
+run app_finder.py
 ```
 python3 app_finder
 ```
