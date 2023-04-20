@@ -12,10 +12,7 @@ make sure you fill out the application.py with your information before continuin
 ## Installation Process:
 (make sure you are using pip3)
 ```
-pip install beautifulsoup4
-pip install requests
-pip install selenium
-pip install keyboard
+pip install -r requirements.txt
 ```
 
 ## Usage
